@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+  <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss} %5p [%thread] %logger{36} - %msg%n"/>
+
+  <!-- Console Appender -->
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>${LOG_PATTERN}</pattern>
+    </encoder>
+  </appender>
+
+  <!-- 로그 레벨 및 출력 설정 -->
+  <logger name="com.c3.cosmetic.UserService" level="DEBUG"/>
+  <logger name="org.springframework.web" level="INFO"/>
+
+  <!-- Root 로거 설정 -->
+  <root level="INFO">
+    <appender-ref ref="STDOUT"/>
+  </root>
+
+</configuration>
