@@ -1,10 +1,10 @@
-package com.c3.cosmetic.service;
+package c3.login.service;
 
-import com.c3.cosmetic.dto.OauthTokenDto;
-import com.c3.cosmetic.dto.UserDto;
-import com.c3.cosmetic.entity.KakaoProfile;
-import com.c3.cosmetic.entity.User;
-import com.c3.cosmetic.repository.UserRepository;
+import c3.login.dto.OauthTokenDto;
+import c3.login.entity.KakaoProfile;
+import c3.login.entity.User;
+import c3.login.dto.UserDto;
+import c3.login.repository.UserRepository;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
