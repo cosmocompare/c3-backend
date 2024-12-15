@@ -1,4 +1,4 @@
-package com.c3.cosmetic.dto;
+package c3.login.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,10 +9,6 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserDto {
-
-    private Long socialId;
-    private String profile_nickname;
-    private String profile_img;
-
+public class OauthTokenDto {
+    private String accessToken;
 }

@@ -1,6 +1,6 @@
-package com.c3.cosmetic.repository;
+package c3.login.repository;
 
-import com.c3.cosmetic.entity.User;
+import c3.login.entity.User;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 

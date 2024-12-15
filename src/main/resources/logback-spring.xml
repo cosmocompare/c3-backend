@@ -11,7 +11,7 @@
   </appender>
 
   <!-- 로그 레벨 및 출력 설정 -->
-  <logger name="com.c3.cosmetic.UserService" level="DEBUG"/>
+  <logger name="com.c3.login.UserService" level="DEBUG"/>
   <logger name="org.springframework.web" level="INFO"/>
 
   <!-- Root 로거 설정 -->
