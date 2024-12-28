@@ -4,6 +4,7 @@ import c3.cosmetic.dto.response.RankingResponse;
 import c3.cosmetic.service.CosmeticService;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,7 +16,8 @@ public class CosmeticController {
 
     // 메인페이지 상품 목록 API
     @GetMapping("/api/v1")
-    public List<RankingResponse> getCosmetics() {
-        return cosmeticService.getCosmetics();
+    public ResponseEntity<List<RankingResponse>> getAllRankings() {
+        List<RankingResponse> ranking = cosmeticService.getAllRankings();
+        return ResponseEntity.ok(ranking);
     }
 }
