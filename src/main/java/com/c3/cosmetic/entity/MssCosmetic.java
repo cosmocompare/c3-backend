@@ -1,4 +1,4 @@
-package c3.cosmetic.entity;
+package com.c3.cosmetic.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -15,13 +15,13 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "zzcosmetic")
+@Table(name = "msscosmetic")
 @Getter
 @Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Builder
 @AllArgsConstructor
-public class ZzCosmetic {
+public class MssCosmetic {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -46,5 +46,4 @@ public class ZzCosmetic {
 
     private LocalDateTime created_at;
     private LocalDateTime updated_at;
-
 }
