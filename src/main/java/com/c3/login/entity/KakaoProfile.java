@@ -1,4 +1,4 @@
-package c3.login.entity;
+package com.c3.login.entity;
 
 import lombok.Data;
 

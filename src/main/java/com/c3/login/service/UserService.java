@@ -1,10 +1,10 @@
-package c3.login.service;
+package com.c3.login.service;
 
-import c3.login.dto.OauthTokenDto;
-import c3.login.entity.KakaoProfile;
-import c3.login.entity.User;
-import c3.login.dto.UserDto;
-import c3.login.repository.UserRepository;
+import com.c3.login.dto.OauthTokenDto;
+import com.c3.login.entity.KakaoProfile;
+import com.c3.login.entity.User;
+import com.c3.login.dto.UserDto;
+import com.c3.login.repository.UserRepository;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;

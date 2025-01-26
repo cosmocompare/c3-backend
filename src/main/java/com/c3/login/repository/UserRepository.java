@@ -1,6 +1,6 @@
-package c3.login.repository;
+package com.c3.login.repository;
 
-import c3.login.entity.User;
+import com.c3.login.entity.User;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 

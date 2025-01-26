@@ -1,4 +1,4 @@
-package c3.cosmetic.entity;
+package com.c3.cosmetic.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -6,6 +6,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import java.time.LocalDateTime;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -14,13 +15,13 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "ranking")
+@Table(name = "msscosmetic")
 @Getter
 @Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Builder
 @AllArgsConstructor
-public class Ranking {
+public class MssCosmetic {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -43,4 +44,6 @@ public class Ranking {
     @Column(name = "image_url", columnDefinition = "TEXT")
     private String imageUrl;
 
+    private LocalDateTime created_at;
+    private LocalDateTime updated_at;
 }
