@@ -1,9 +1,9 @@
-package c3.login.controller;
+package com.c3.login.controller;
 
-import c3.login.dto.OauthTokenDto;
-import c3.login.entity.User;
-import c3.login.service.UserService;
-import c3.login.dto.UserDto;
+import com.c3.login.dto.OauthTokenDto;
+import com.c3.login.entity.User;
+import com.c3.login.service.UserService;
+import com.c3.login.dto.UserDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
